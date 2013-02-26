@@ -10,10 +10,16 @@
 	{% else %}
 	<title>{{ site.title }}</title>
 	{% endif %}
+
+        <link href="/lib/prism/prism.min.css" rel="stylesheet">
+        <link href="/css/site.css" rel="stylesheet">
+
     </head>
-    <body>
+    <body class="language-php">
 
         {{ content }}
+
+        <script src="/lib/prism/prism.min.js"></script>
 
     </body>
 </html>
