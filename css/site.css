@@ -10,7 +10,7 @@ h1, h2, h3, p, pre, ul {
     margin: 0 0 30px 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, #livefyre-comments {
     width: 600px;
 }
 

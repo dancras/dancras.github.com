@@ -21,5 +21,28 @@
 
         <script src="/lib/prism/prism.min.js"></script>
 
+        <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+        <script type="text/javascript">
+        (function () {
+
+            if (!document.getElementById('livefyre-comments')) {
+                return;
+            }
+
+            var articleId = fyre.conv.load.makeArticleId(null);
+            fyre.conv.load({}, [{
+                el: 'livefyre-comments',
+                network: "livefyre.com",
+                siteId: "325276",
+                articleId: articleId,
+                signed: false,
+                collectionMeta: {
+                    articleId: articleId,
+                    url: fyre.conv.load.makeCollectionUrl(),
+                }
+            }], function() {});
+        }());
+        </script>
+
     </body>
 </html>
