@@ -25,6 +25,10 @@
         <script type="text/javascript">
         (function () {
 
+            if (window.location.hostname === '127.0.0.1') {
+                return;
+            }
+
             if (!document.getElementById('livefyre-comments')) {
                 return;
             }
