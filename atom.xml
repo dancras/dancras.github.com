@@ -5,13 +5,13 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>dancras.co.uk</title>
-  <link href="http://www.idleplaythings.com/"/>
+  <link href="http://dancras.co.uk/"/>
   <link type="application/atom+xml" rel="self" href="http://dancras.co.uk/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>http://dancras.co.uk/</id>
   <author>
     <name>Daniel Howlett</name>
-    <email>dhowlett@inviqa.com</email>
+    <email>foobar@example.com</email>
   </author>
 
   {% for post in site.posts %}
