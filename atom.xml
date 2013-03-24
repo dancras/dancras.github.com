@@ -11,7 +11,6 @@ layout: nil
   <id>http://dancras.co.uk/</id>
   <author>
     <name>Daniel Howlett</name>
-    <email>foobar@example.com</email>
   </author>
 
   {% for post in site.posts %}
@@ -21,7 +20,7 @@ layout: nil
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>{{ post.author }}</name>
+      <name>Daniel Howlett</name>
       <uri>http://dancras.co.uk/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
