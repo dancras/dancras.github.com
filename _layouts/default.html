@@ -19,31 +19,16 @@
 
         {{ content }}
 
-        <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
         <script type="text/javascript">
-        (function () {
 
-            if (window.location.hostname === '127.0.0.1') {
-                return;
-            }
+window.graphcomment_id = 'dancras-co-uk';
 
-            if (!document.getElementById('livefyre-comments')) {
-                return;
-            }
+(function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+})();
 
-            var articleId = fyre.conv.load.makeArticleId(null);
-            fyre.conv.load({}, [{
-                el: 'livefyre-comments',
-                network: "livefyre.com",
-                siteId: "325276",
-                articleId: articleId,
-                signed: false,
-                collectionMeta: {
-                    articleId: articleId,
-                    url: fyre.conv.load.makeCollectionUrl(),
-                }
-            }], function() {});
-        }());
         </script>
 
     </body>
