@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+            "D9L6WW5C7T.dancras.sudokui"
+        ],
+        "components": [
+            "/": "/apps/sudokui/*"
+        ]
+      }
+    ]
+  }
+}
