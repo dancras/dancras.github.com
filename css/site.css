@@ -11,7 +11,7 @@ h1, h2, h3, p, pre, ul, table {
 }
 
 h1, h2, h3, p, #livefyre-comments {
-    width: 600px;
+    max-width: 600px;
 }
 
 h1, h2, h3 {
@@ -62,4 +62,19 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+blockquote::before {
+    display: block;
+    height: 0px;
+    color: #ccc;
+    content: ".:";
+    font-size: 2em;
+    margin-left: -1em;
+}
+
+.highlight {
+    margin-left: 0;
+    width: fit-content;
+    line-height: 1.6;
 }
